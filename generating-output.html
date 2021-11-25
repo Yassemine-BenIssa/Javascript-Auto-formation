@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>Mon premier exemple de OUTPUT en innerHTML</h2>
+<p>afficher la somme de deux nombres</p>
+
+<p id="demo"></p>
+
+<script>
+document.getElementById("demo").innerHTML = 5 + 6;
+</script>
+<h2>Mon 2éme exemple de OUTPUT en doucement.write</h2>
+<p>afficher la somme de deux nombres.</p>
+
+<p>N'appelez jamais "document.write" une fois le chargement du document terminé.
+     Il écrasera tout le document..</p>
+
+<script>
+document.write(5 + 6);
+</script>
+<h2>Mon 3éme exemple de OUTPUT en alert</h2>
+<p>afficher la somme de deux nombres</p>
+
+<script>
+alert(15 + 1);
+</script>
+<h2>Mon 4éme exemple de OUTPUT en console.log()</h2>
+
+<p>afficher la somme de deux nombres</p>
+
+<script>
+    var a = 3;
+    var b = 6;
+    var x = a + b
+    console.log(x);
+</script>
+
+<h2>mon 5eme exemple OUTPUT en window.print() </h2>
+
+<p>
+    Cliquez sur le bouton pour imprimer la page en cours.</p>
+
+<button onclick="window.print()">Imprimer ce page</button>
+</body>
+</html> 
