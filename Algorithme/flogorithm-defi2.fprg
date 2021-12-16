@@ -1,0 +1,45 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="solicode"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2021-12-16 01:07:33 "/>
+        <attribute name="created" value="c29saWNvZGU7REVTS1RPUC1VMDdCNTk3OzIwMjEtMTItMTY7IjAxOjExOjE2ICI7MzAzMg=="/>
+        <attribute name="edited" value="c29saWNvZGU7REVTS1RPUC1VMDdCNTk3OzIwMjEtMTItMTY7IjAyOjAyOjAxICI7MTszMTM1"/>
+        <attribute name="edited" value="c29saWNvZGU7REVTS1RPUC1VVEc0T0lKOzIwMjEtMTItMTY7IjAxOjA3OjMzICI7MTszMjQz"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="table" type="Integer" array="True" size="5"/>
+            <assign variable="table[0]" expression="5"/>
+            <assign variable="table[1]" expression="10"/>
+            <assign variable="table[2]" expression="20"/>
+            <assign variable="table[3]" expression="40"/>
+            <assign variable="table[4]" expression="45"/>
+            <declare name="notFound" type="Boolean" array="False" size=""/>
+            <assign variable="notFound" expression="false"/>
+            <declare name="userInput" type="Integer" array="False" size=""/>
+            <declare name="i" type="Integer" array="False" size=""/>
+            <output expression="&quot;enter a number&quot;" newline="True"/>
+            <input variable="userInput"/>
+            <for variable="i" start="0" end="4" direction="inc" step="1">
+                <if expression="userInput==table[i]">
+                    <then>
+                        <assign variable="notFound" expression="true"/>
+                    </then>
+                    <else/>
+                </if>
+            </for>
+            <if expression="notFound">
+                <then>
+                    <output expression="&quot;the nuber is exists&quot;" newline="True"/>
+                </then>
+                <else>
+                    <output expression="&quot;the number is not exist&quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>
