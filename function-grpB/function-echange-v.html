@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>function de echanger deux valeurs </title>
+</head>
+<p id="demo"></p>
+<body>
+    <script>
+        function echange(A,B,C) {
+            C=A;
+             A=B; 
+             B=C;
+            return "A: " + A + " B: " + B
+        }
+        var A;
+        var B;
+        var C;
+        
+         A= window.prompt('entré la valeur de A');
+         B= window.prompt('entré la valeuur de B');
+         var result = echange (A,B,C);
+         
+         alert(result);
+        
+       
+    </script>
+</body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Function avec paramétre</title>
+</head>
+<h2>Functions paramétre</h2>
+<p>Somme d'ensemble des nombers:</p>
+<p id="demo"></p>
+<body>
+    <script>
+    function somme(number1, number2, number3) {
+        return number1 + number2 + number3 ;
+    }
+    var a = 2 ;
+    var b = 2 ;
+    var c = 1 ;
+    var result = somme (a, b, c);
+    document.getElementById("demo").innerHTML = result
+    </script>
+</body>
+</html>

@@ -1,0 +1,40 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="solicode"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2021-12-17 10:38:12 "/>
+        <attribute name="created" value="c29saWNvZGU7REVTS1RPUC01NkkyNjdCOzIwMjEtMTItMTQ7IjA5OjIyOjM4ICI7MzAzMA=="/>
+        <attribute name="edited" value="c29saWNvZGU7REVTS1RPUC01NkkyNjdCOzIwMjEtMTItMTQ7IjA5OjQxOjU2ICI7MTszMTM5"/>
+        <attribute name="edited" value="c29saWNvZGU7REVTS1RPUC1VVEc0T0lKOzIwMjEtMTItMTc7IjEwOjM4OjEyICI7MjszMjQ2"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="maxNumber" type="Integer" array="False" size=""/>
+            <declare name="listNumbers" type="Integer" array="True" size="10"/>
+            <assign variable="listNumbers[0]" expression="52"/>
+            <assign variable="listNumbers[1]" expression="34"/>
+            <assign variable="listNumbers[2]" expression="1"/>
+            <assign variable="listNumbers[3]" expression="445"/>
+            <assign variable="listNumbers[4]" expression="12"/>
+            <assign variable="listNumbers[5]" expression="78"/>
+            <assign variable="listNumbers[6]" expression="86"/>
+            <assign variable="listNumbers[7]" expression="45"/>
+            <assign variable="listNumbers[8]" expression="3"/>
+            <assign variable="listNumbers[9]" expression="33"/>
+            <declare name="i" type="Integer" array="False" size=""/>
+            <assign variable="Maxnumber" expression="listNumbers[0]"/>
+            <for variable="i" start="0" end="9" direction="inc" step="1">
+                <if expression="MaxNumber &lt;= listNumbers[i]">
+                    <then>
+                        <assign variable="MaxNumber" expression="listNumbers[i]"/>
+                    </then>
+                    <else/>
+                </if>
+            </for>
+            <output expression="&quot;Max number is: &quot; &amp; MaxNumber" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
