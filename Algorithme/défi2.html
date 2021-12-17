@@ -11,9 +11,10 @@
 <p id="demo2"></p>
 <body>
     <script>
+        
             var isFound = false;
             var listNumbers = [];
-
+            
             listNumbers[0] = 5;
             listNumbers[1] = 10;
             listNumbers[2] = 20;
@@ -21,7 +22,7 @@
             listNumbers[4] = 45;
             var userInput;
             var i;
-
+           
             userInput = window.prompt('Enter a number ');
             for (i = 0; i <= 4; i++) {
                 if (userInput == listNumbers[i]) {
@@ -30,7 +31,7 @@
                 }
             }
             if (isFound) {
-               document.getElementById("demo1").innerHTML = ("this number is exists");
+               document.getElementById("demo1").innerHTML = ("this number is exists en la position :" +i );
             } else {
                 document.getElementById("demo2").innerHTML = ("this number is not exists");
             }
